@@ -1,0 +1,96 @@
+body{
+  font-family: sans-serif;
+  background:#f3f3f3;
+  margin:0;
+  padding: 15px;
+}
+
+.post{
+    max-width: 520px;
+    margin: 24px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 540px;
+    margin: 5px auto;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user strong{
+    display: block;
+    font-size: 14px;
+}
+.user span{
+    font-size: 12px;
+    color: #666;
+}
+.logo i{
+    font-size: 28px;
+    color: #1c1918;
+}
+
+.right i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.post-img{
+    width: 100;
+    height: auto;
+    display: block;
+}
+.post-likes{
+  padding:0 12px;
+  margin-bottom:8px;
+  font-size:14px;
+}
+
+.post-caption{
+  padding:0 12px 16px;
+  color:#333;
+  line-height:1.5;
+  font-size:14px;
+}
+.post-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 12px;
+}
+.icon-btn{
+    background: none; 
+    border: 0;
+    padding: 0%;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 14px;
+}
+.post-img.square{ 
+                 /* 1 */
+  aspect-ratio: auto;     /* 2: alto = ancho (cuadrado) */
+  overflow: hidden; 
+  margin: 0%;
+  padding: 0%;
+  height: auto;
+  line-height: 0;
+}
+
+.post-img.square img{      /* 4 */
+  width: 100%;             /* 5: llena el ancho */
+  height: auto;            /* 6: y el alto del cuadrado */
+  object-fit: cover;       /* 7: recorte agradable sin deformar */
+  display: block;
+}
+.post-actions{ margin-top: 0; padding-top: 14px; } /* ya lo tienes parecido */
+.post-img{ margin-bottom: 0; }                     /* sin margen bajo la imagen */
+.post-likes, .post-caption p{ margin-top: 0; }     /* quita margen superior por si acaso */
